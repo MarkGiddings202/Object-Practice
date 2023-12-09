@@ -1,4 +1,3 @@
-// create an object
 let person = {
   name: "Mark",
   age: 25,
@@ -28,3 +27,9 @@ console.log(person.age);
 console.log(person.education);
 console.log(person.kids, "SOON LOL");
 console.log(person["my goals"])
+
+// deleting properties from an object
+delete person.kids
+// prints out properties of the person object and removes kids
+console.log(person)
+
