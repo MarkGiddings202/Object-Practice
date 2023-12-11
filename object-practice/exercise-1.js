@@ -1,4 +1,14 @@
 /*
+
+    1. Create an object called "myPet" with the following properties:
+        - name -> "Sudo"
+        - type -> "Dog"
+        - breed -> "Poodle"
+        - age -> 7
+        - friends -> ["Bit", "Byte", "Data"]
+
+    2. Print out "myPet" to the terminal
+
     3. Add a new property: colour -> "Black"
 
     4. Change "breed" to be "Beagle"
@@ -11,14 +21,27 @@
 
     8. Print out "myPet" to the terminal again
 */
-let myPet = {
-    name:"Sude",
-    type:"Dog",
-    breed:"Poodle",
-    age: 7,
-    friend: ["Bit", "Byte", "Data"]
-}
+
 // 1.
-console.log(myPet)
+let myPet = {
+  name: "Sude",
+  type: "Dog",
+  breed: "Poodle",
+  age: 7,
+  friend: ["Bit", "Byte", "Data"],
+};
 // 2.
-myPet
+console.log(myPet);
+// 3.
+myPet.color = "Black";
+console.log(myPet);
+// 4.
+myPet.breed = "Beagle";
+// 5.
+delete myPet.friend.pop();
+// 6.
+console.log(myPet);
+// 7.
+myPet.friend.push("Chips");
+// 8.
+console.log(myPet);

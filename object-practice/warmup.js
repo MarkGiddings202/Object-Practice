@@ -12,6 +12,8 @@
     4. Add "Honduras" to the list of neighbours to "mexico"
     
     5. Print out "mexico" to the terminal again
+
+    6. Add a new property "rate: 10"
 */
 // 1.
 let mexico = {
@@ -29,3 +31,6 @@ mexico.neighbours.push("Honduras")
 console.log(mexico.neighbours)
 // 5.
 console.log(mexico.name)
+// 6. 
+mexico.rate = 10
+console.log(mexico)
