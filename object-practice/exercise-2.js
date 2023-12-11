@@ -1,29 +1,4 @@
 /*
-    Exercise 1
-
-    1. Create an object called "myPet" with the following properties:
-        - name -> "Sudo"
-        - type -> "Dog"
-        - breed -> "Poodle"
-        - age -> 7
-        - friends -> ["Bit", "Byte", "Data"]
-
-    2. Print out "myPet" to the terminal
-
-    3. Add a new property: colour -> "Black"
-
-    4. Change "breed" to be "Beagle"
-
-    5. Remove "Data" from the list of friends for "myPet"
-    
-    6. Print out "myPet" to the terminal again
-
-    7. Add "Chip" to the list of friends for "myPet"
-
-    8. Print out "myPet" to the terminal again
-*/
-/*
-    Exercise 2
     1. Create the following 3 objects:
         - const banana = {name: "banana", quantity: 1, price: 1.95}
         - const apple = {name: "apple", quantity: 1, price: 1.45}
@@ -50,3 +25,32 @@
 
     9. Print out both "store" and "candy"
 */
+
+// 1.
+const banana = { name: "Banana", quantity: 1, price: 1.95 };
+const apple = { name: "apple", quantity: 1, price: 1.45 };
+const candy = { name: "candy", quantity: 1, price: 1.45 };
+
+// 2.
+const store = {
+  storeNumber: 5,
+  locationCity: "Milan",
+  locationCountry: "Italy",
+  products: ["banana", "apple", "candy"],
+};
+// 3.
+console.log(store);
+// 4.
+console.log(Object.values(store.products));
+// 5.
+console.log(store.locationCountry);
+// 6.
+console.log(store.products[0]);
+store.products[0] = banana.price;
+console.log(store.products[0]);
+// 7.
+console.log(store, banana);
+// 8.
+candy.price = 4.99;
+// 9.
+console.log(store, candy);
