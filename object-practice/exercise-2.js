@@ -38,6 +38,8 @@ const store = {
   locationCountry: "Italy",
   products: ["banana", "apple", "candy"],
 };
+
+console.log(store.products[0])
 // 3.
 console.log(store);
 // 4.
