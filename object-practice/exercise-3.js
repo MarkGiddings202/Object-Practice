@@ -41,8 +41,22 @@ delete houseForSale["built"]
 houseForSale.owner.age = 30
 
 // 5
+let maxMethod= Math.max(...houseForSale.offers)
+console.log(maxMethod)
+
 let maxOffer = houseForSale.offers.reduce((result, num)=>{
+    /*
+    reduce, if you don't take the time to understand
+    what it does, it would easily fly over many beginner programers heads
+    after every iteration it's only meant to send back ONE value.
+    with that being said use the counter(result) and the num (all the elements in the array)
+    to determine the highest number in the array
+    if the result is less than the num we send the number back
+    if the result is greater than the number we return the result back to the reduce counter ( 0 )
+    this is how you get the maximum value of a number in an array.
+  */
     if(result < num){
+     
         return num 
     }
     return result
@@ -55,7 +69,5 @@ houseForSale["sale price"] = maxOffer
 
 
 
-
-
-//
-// console.log(houseForSale)
+// 7
+console.log(houseForSale)
