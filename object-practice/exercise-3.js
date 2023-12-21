@@ -41,5 +41,21 @@ delete houseForSale["built"]
 houseForSale.owner.age = 30
 
 // 5
+let maxOffer = houseForSale.offers.reduce((result, num)=>{
+    if(result < num){
+        return num 
+    }
+    return result
+}, 0);
+
+console.log(maxOffer)
+
+// 6
+houseForSale["sale price"] = maxOffer
 
 
+
+
+
+//
+// console.log(houseForSale)
